@@ -1,0 +1,74 @@
+/* Gallery Container Styles */
+.gallery-container {
+    background-color:  rgb(235, 235, 235); /* Background color for the gallery */
+    padding: 20px; /* Padding for the container */
+  }
+  
+  /* Gradient Text Styles */
+  .gradient-text {
+    font-size: 28px; /* Font size */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Space above and below */
+    color: purple; /* Text color */
+  }
+  
+  /* Card Container Styles */
+  .cards-container {
+    display: flex; /* Use flexbox to arrange cards in a row */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    padding: 10px 0; /* Padding on the top and bottom */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    scrollbar-width: thin; /* Firefox scrollbar style */
+  }
+  .cards-container::-webkit-scrollbar{
+    display: none;
+  }
+  /* Styles for Chrome and Edge Scrollbars */
+  .cards-container::-webkit-scrollbar {
+    height: 8px; /* Height of the scrollbar */
+  } 
+  
+  .cards-container::-webkit-scrollbar-thumb {
+    background: rgba(58, 56, 56, 0.5); /* Color of the scrollbar */
+    border-radius: 10px; /* Rounded scrollbar */
+  }
+  
+  /* Restaurant Card Styles */
+  .restaurant-card {
+    background-color: #f9f9f9; /* Light background for cards */
+    border-radius: 25px; /* Rounded corners */
+    margin-right: 20px; /* Space between cards */
+    padding: 10px; /* Padding inside the card */
+    flex: 0 0 150px; /* Set a fixed width for the cards (150px) */
+    transition: transform 0.3s; /* Transition for hover effect */
+  }
+  
+  /* Restaurant Image Styles */
+  .restaurant-image {
+    width: 350; /* Full width for images */
+    height: 250px;
+    border-radius: 30px; /* Image border radius */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  /* Restaurant Info Styles */
+  .restaurant-info {
+    text-align: center; /* Center text below the image */
+  }
+  
+  /* Restaurant Name Styles */
+  .restaurant-name {
+    color: black; /* Bright black color for the name */
+    margin: 10px 0; /* Space above and below */
+  }
+  
+  /* Restaurant Rating Styles */
+  .restaurant-rating {
+    color: rgb(255, 230, 0); /* Yellow color for rating stars */
+  }
+  
+  /* Hover Effect for Restaurant Cards */
+  .restaurant-card:hover {
+    transform: translateY(-5px); /* Tilt effect on hover */
+  }
+  
